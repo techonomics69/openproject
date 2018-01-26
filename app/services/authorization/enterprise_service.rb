@@ -38,7 +38,7 @@ class Authorization::EnterpriseService
                        attribute_help_texts
                        two_factor_authentication
                        custom_fields_in_projects_list
-                       attachment_search).freeze
+                       attachment_filters).freeze
 
   def initialize(token)
     self.token = token

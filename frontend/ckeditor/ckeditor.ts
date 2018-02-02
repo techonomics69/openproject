@@ -15,13 +15,14 @@ const LinkPlugin = (require('@ckeditor/ckeditor5-link/src/link') as any).default
 const ListPlugin = (require('@ckeditor/ckeditor5-list/src/list') as any).default;
 const ParagraphPlugin = (require('@ckeditor/ckeditor5-paragraph/src/paragraph') as any).default;
 // const GFMDataProcessor = (require('@ckeditor/ckeditor5-markdown-gfm/src/gfmdataprocessor') as any).default;
+// import OPCommonMarkProcessor from './plugins/op-commonmark/op-commonmark';
+const CommonMarkDataProcessor = (require('./plugins/ckeditor5-markdown-gfm/src/commonmarkdataprocessor') as any).default;
 
 // import OpTableWidget from './plugins/op-table/src/op-table';
 import OPImageUploadPlugin from './plugins/op-image-upload/op-image-upload';
-import OPCommonMarkProcessor from './plugins/op-commonmark/op-commonmark';
 
 function Markdown( editor:any ) {
-  editor.data.processor = new OPCommonMarkProcessor();
+  editor.data.processor = new CommonMarkDataProcessor();
 }
 
 declare global {
@@ -36,7 +37,7 @@ export class OPBalloonEditor extends BalloonEditor {}
 
 const config = {
   plugins: [
-    Markdown,
+    // Markdown,
     EssentialsPlugin,
     AutoformatPlugin,
     BoldPlugin,
@@ -50,7 +51,7 @@ const config = {
     LinkPlugin,
     ListPlugin,
     ParagraphPlugin,
-    OPImageUploadPlugin
+    // OPImageUploadPlugin
   ],
   config: {
     toolbar: [

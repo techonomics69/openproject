@@ -1,7 +1,8 @@
 import HtmlDataProcessor from '@ckeditor/ckeditor5-engine/src/dataprocessor/htmldataprocessor';
-import converters from './to-markdown/converters';
-import MarkdownIt from 'markdown-it';
-import toMarkdown from 'to-markdown';
+
+// import converters from './to-markdown/converters';
+// import MarkdownIt from 'markdown-it';
+// import toMarkdown from 'to-markdown';
 
 /**
  * Markdown procesesing using markdown-it and toMarkdown instead of bundled
@@ -19,18 +20,18 @@ export default class OPCommonMarkProcessor {
 	}
 
 	toView(data) {
-    var md = new MarkdownIt({
-      html: true,
-      linkify: true
-    });
-
-		const html = md.render(data);
-		return this._htmlDP.toView(html);
+    //var md = new MarkdownIt({
+    //   html: true,
+    //   linkify: true
+    // });
+    //
+		// const html = md.render(data);
+		// return this._htmlDP.toView(html);
 	}
 
 	toData(viewFragment) {
 		const html = this._htmlDP.toData( viewFragment );
-		return toMarkdown( html, { gfm: true, converters } );
+		//return toMarkdown( html, { gfm: true, converters } );
 	}
 }
 

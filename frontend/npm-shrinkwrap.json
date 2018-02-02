@@ -50,6 +50,8 @@
       "integrity": "sha1-x4iiawkicycKJd22+k09Xp89SYk=",
       "requires": {
         "tslib": "1.8.0"
+      }
+    },
     "@ckeditor/ckeditor5-autoformat": {
       "version": "1.0.0-alpha.2",
       "resolved": "https://registry.npmjs.org/@ckeditor/ckeditor5-autoformat/-/ckeditor5-autoformat-1.0.0-alpha.2.tgz",
@@ -109,7 +111,7 @@
       "resolved": "https://registry.npmjs.org/@ckeditor/ckeditor5-dev-utils/-/ckeditor5-dev-utils-5.0.0.tgz",
       "integrity": "sha1-lVYm6FxOzcdR13Y4AD0MzEujrK4=",
       "requires": {
-        "acorn": "5.3.0",
+        "acorn": "5.4.0",
         "del": "3.0.0",
         "escodegen": "git://github.com/ma2ciek/escodegen.git#103e5907aa3cc0bff90e58be8fd5e997da40f3ae",
         "fs-extra": "4.0.3",
@@ -120,9 +122,9 @@
       },
       "dependencies": {
         "acorn": {
-          "version": "5.3.0",
-          "resolved": "https://registry.npmjs.org/acorn/-/acorn-5.3.0.tgz",
-          "integrity": "sha512-Yej+zOJ1Dm/IMZzzj78OntP/r3zHEaKcyNoU2lAaxPtrseM6rF0xwqoz5Q5ysAiED9hTjI2hgtvLXitlCN1/Ug=="
+          "version": "5.4.0",
+          "resolved": "https://registry.npmjs.org/acorn/-/acorn-5.4.0.tgz",
+          "integrity": "sha512-bkLTrtPfRASTxDXFaih7SbeYSsQ8MjrqCQKMrgZ4Hc7kYI//WVU6rDTAIqVrAudjgMFQEGthYfodtaw8dTRJrg=="
         },
         "balanced-match": {
           "version": "1.0.0",
@@ -438,7 +440,7 @@
     },
     "@types/lodash": {
       "version": "https://registry.npmjs.org/@types/lodash/-/lodash-4.14.52.tgz",
-      "integrity": "sha1-3lx6sU2hKJczIzybDsb543fbkPU="
+      "integrity": "sha512-i7U/y/J3of/RrZP+oUHLD1ksPk+e7FJ+sKZcJ/rkHYA4CKP4D6ofZ36f+3lXY4oZHWY6ZIFRXXZ349VIqwhIbQ=="
     },
     "@types/mocha": {
       "version": "2.2.39",
@@ -5928,7 +5930,7 @@
       "resolved": "https://registry.npmjs.org/linkify-it/-/linkify-it-2.0.3.tgz",
       "integrity": "sha1-2UpGSPmxwXnWT6lykSaL22zpQ08=",
       "requires": {
-        "uc.micro": "1.0.3"
+        "uc.micro": "1.0.5"
       }
     },
     "load-json-file": {
@@ -6164,7 +6166,7 @@
         "entities": "1.1.1",
         "linkify-it": "2.0.3",
         "mdurl": "1.0.1",
-        "uc.micro": "1.0.3"
+        "uc.micro": "1.0.5"
       }
     },
     "md5.js": {
@@ -6731,7 +6733,7 @@
         "lodash.mergewith": "4.6.0",
         "meow": "3.7.0",
         "mkdirp": "0.5.1",
-        "nan": "2.7.0",
+        "nan": "2.8.0",
         "node-gyp": "3.6.2",
         "npmlog": "4.1.2",
         "request": "2.79.0",
@@ -7514,11 +7516,6 @@
         }
       }
     },
-    "reflect-metadata": {
-      "version": "0.1.10",
-      "resolved": "https://registry.npmjs.org/reflect-metadata/-/reflect-metadata-0.1.10.tgz",
-      "integrity": "sha1-tPg3BEFqytiZiMmxVjXUfgO5NEo="
-    },
     "rechoir": {
       "version": "0.6.2",
       "resolved": "https://registry.npmjs.org/rechoir/-/rechoir-0.6.2.tgz",
@@ -7535,6 +7532,11 @@
         "indent-string": "2.1.0",
         "strip-indent": "1.0.1"
       }
+    },
+    "reflect-metadata": {
+      "version": "0.1.10",
+      "resolved": "https://registry.npmjs.org/reflect-metadata/-/reflect-metadata-0.1.10.tgz",
+      "integrity": "sha1-tPg3BEFqytiZiMmxVjXUfgO5NEo="
     },
     "regex-cache": {
       "version": "0.4.3",
@@ -8694,9 +8696,9 @@
       "integrity": "sha1-fSKbH8xjfkZsoIEYCDanqr/4P0M="
     },
     "to-markdown": {
-      "version": "3.1.0",
-      "resolved": "https://registry.npmjs.org/to-markdown/-/to-markdown-3.1.0.tgz",
-      "integrity": "sha1-Y//BobAKxU4/kzK+yfIHwkMTQUw=",
+      "version": "3.1.1",
+      "resolved": "https://registry.npmjs.org/to-markdown/-/to-markdown-3.1.1.tgz",
+      "integrity": "sha1-JR4kG4x0x60XcpLmxSzBlckmjBE=",
       "requires": {
         "collapse-whitespace": "1.1.2",
         "jsdom": "9.12.0"
@@ -8896,9 +8898,9 @@
       "integrity": "sha1-A4qV99m7tCCxvzW6MdTFwd0//jQ="
     },
     "uc.micro": {
-      "version": "1.0.3",
-      "resolved": "https://registry.npmjs.org/uc.micro/-/uc.micro-1.0.3.tgz",
-      "integrity": "sha1-ftUNXg+an7ClczeSWfKndFjVAZI="
+      "version": "1.0.5",
+      "resolved": "https://registry.npmjs.org/uc.micro/-/uc.micro-1.0.5.tgz",
+      "integrity": "sha512-JoLI4g5zv5qNyT09f4YAvEZIIV1oOjqnewYg5D38dkQljIzpPT296dbIGvKro3digYI1bkb7W6EP1y4uDlmzLg=="
     },
     "uglify-js": {
       "version": "2.8.29",

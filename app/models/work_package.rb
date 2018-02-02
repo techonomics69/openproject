@@ -153,7 +153,6 @@ class WorkPackage < ActiveRecord::Base
 
   include WorkPackage::Journalized
 
-
   def self.done_ratio_disabled?
     Setting.work_package_done_ratio == 'disabled'
   end
@@ -161,7 +160,6 @@ class WorkPackage < ActiveRecord::Base
   def self.use_status_for_done_ratio?
     Setting.work_package_done_ratio == 'status'
   end
-
 
   def self.use_field_for_done_ratio?
     Setting.work_package_done_ratio == 'field'

@@ -141,7 +141,7 @@
     "ui-select": "~0.19.6",
     "url-loader": "^0.5.7",
     "webpack": "^3.5.6",
-    "zone.js": "^0.8.18"
+    "zone.js": "^0.8.20"
   },
   "scripts": {
     "postinstall": "npm rebuild node-sass && npm run webpack-vendors",

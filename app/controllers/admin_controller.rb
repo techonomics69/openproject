@@ -27,8 +27,6 @@
 # See doc/COPYRIGHT.rdoc for more details.
 #++
 
-require 'text_extractor'
-
 class AdminController < ApplicationController
   layout 'admin'
 

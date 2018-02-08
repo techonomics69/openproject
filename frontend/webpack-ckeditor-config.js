@@ -34,6 +34,7 @@ var autoprefixer = require('autoprefixer');
 
 const CKEditorWebpackPlugin = require( '@ckeditor/ckeditor5-dev-webpack-plugin' );
 var CleanWebpackPlugin = require('clean-webpack-plugin');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 var mode = (process.env['RAILS_ENV'] || 'production').toLowerCase();
 var uglify = (mode !== 'development');
@@ -76,18 +77,33 @@ function getWebpackCKEConfig() {
           {
               // Or /ckeditor5-[^/]+\/theme\/[^/]+\.scss$/ if you want to limit this loader
               // to CKEditor 5's theme only.
-              test: /\.scss$/,
+              test: /\.css$/,
 
               use: [
-                  'style-loader',
-                  {
-                      loader: 'css-loader',
-                      options: {
-                          minimize: true
-                      }
-                  },
-                  'sass-loader'
+                'style-loader',
+                {
+                  loader: 'postcss-loader',
+                  options: {
+                    config: { path: path.resolve(__dirname, 'ckeditor', 'postcss.config.js') }
+                  }
+                }
               ]
+          },
+          {
+            // Or /ckeditor5-[^/]+\/theme\/[^/]+\.scss$/ if you want to limit this loader
+            // to CKEditor 5's theme only.
+            test: /\.scss$/,
+
+            use: [
+              'style-loader',
+              {
+                loader: 'css-loader',
+                options: {
+                  minimize: true
+                }
+              },
+              'sass-loader'
+            ]
           }
       ]
     },

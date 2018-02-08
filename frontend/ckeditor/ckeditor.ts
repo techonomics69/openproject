@@ -1,20 +1,20 @@
-const ClassicEditor = (require('@ckeditor/ckeditor5-editor-classic/src/classiceditor') as any).default;
-const BalloonEditor = (require('@ckeditor/ckeditor5-editor-balloon/src/ballooneditor') as any).default;
+const ClassicEditor = (require('./ckeditor5/packages/ckeditor5-editor-classic/src/classiceditor') as any).default;
+const BalloonEditor = (require('./ckeditor5/packages/ckeditor5-editor-balloon/src/ballooneditor') as any).default;
 
-const EssentialsPlugin = (require('@ckeditor/ckeditor5-essentials/src/essentials') as any).default;
-const AutoformatPlugin = (require('@ckeditor/ckeditor5-autoformat/src/autoformat') as any).default;
-const BoldPlugin = (require('@ckeditor/ckeditor5-basic-styles/src/bold') as any).default;
-const ItalicPlugin = (require('@ckeditor/ckeditor5-basic-styles/src/italic') as any).default;
-const BlockquotePlugin = (require('@ckeditor/ckeditor5-block-quote/src/blockquote') as any).default;
-const HeadingPlugin = (require('@ckeditor/ckeditor5-heading/src/heading') as any).default;
-const ImagePlugin = (require('@ckeditor/ckeditor5-image/src/image') as any).default;
-const ImagecaptionPlugin = (require('@ckeditor/ckeditor5-image/src/imagecaption') as any).default;
-const ImagestylePlugin = (require('@ckeditor/ckeditor5-image/src/imagestyle') as any).default;
-const ImagetoolbarPlugin = (require('@ckeditor/ckeditor5-image/src/imagetoolbar') as any).default;
-const LinkPlugin = (require('@ckeditor/ckeditor5-link/src/link') as any).default;
-const ListPlugin = (require('@ckeditor/ckeditor5-list/src/list') as any).default;
-const ParagraphPlugin = (require('@ckeditor/ckeditor5-paragraph/src/paragraph') as any).default;
-// const GFMDataProcessor = (require('@ckeditor/ckeditor5-markdown-gfm/src/gfmdataprocessor') as any).default;
+const EssentialsPlugin = (require('./ckeditor5/packages/ckeditor5-essentials/src/essentials') as any).default;
+const AutoformatPlugin = (require('./ckeditor5/packages/ckeditor5-autoformat/src/autoformat') as any).default;
+const BoldPlugin = (require('./ckeditor5/packages/ckeditor5-basic-styles/src/bold') as any).default;
+const ItalicPlugin = (require('./ckeditor5/packages/ckeditor5-basic-styles/src/italic') as any).default;
+const BlockquotePlugin = (require('./ckeditor5/packages/ckeditor5-block-quote/src/blockquote') as any).default;
+const HeadingPlugin = (require('./ckeditor5/packages/ckeditor5-heading/src/heading') as any).default;
+const ImagePlugin = (require('./ckeditor5/packages/ckeditor5-image/src/image') as any).default;
+const ImagecaptionPlugin = (require('./ckeditor5/packages/ckeditor5-image/src/imagecaption') as any).default;
+const ImagestylePlugin = (require('./ckeditor5/packages/ckeditor5-image/src/imagestyle') as any).default;
+const ImagetoolbarPlugin = (require('./ckeditor5/packages/ckeditor5-image/src/imagetoolbar') as any).default;
+const LinkPlugin = (require('./ckeditor5/packages/ckeditor5-link/src/link') as any).default;
+const ListPlugin = (require('./ckeditor5/packages/ckeditor5-list/src/list') as any).default;
+const ParagraphPlugin = (require('./ckeditor5/packages/ckeditor5-paragraph/src/paragraph') as any).default;
+// const GFMDataProcessor = (require('./ckeditor5/packages/ckeditor5-markdown-gfm/src/gfmdataprocessor') as any).default;
 // import OPCommonMarkProcessor from './plugins/op-commonmark/op-commonmark';
 const CommonMarkDataProcessor = (require('./plugins/ckeditor5-markdown-gfm/src/commonmarkdataprocessor') as any).default;
 
